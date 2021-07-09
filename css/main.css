@@ -4,8 +4,9 @@
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 }
-.nav{
-	position: absolute;
+.navbar{
+	background-color: rgba(51, 51, 0, 0.6);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.6);
 }
 /* Reuse */
 .header-logo{
@@ -52,15 +53,18 @@
 }
 /*contact*/
 .form-control {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  box-sizing: border-box;
   border: none;
   border-bottom: 2px solid blue;
   border-radius: 0 !important;
 }
 /*galary*/
+.cf-showcase{
+	display: flex;
+}
+.cf-showcase .list{
+	width: 33%;
+	margin: 20px;
+}
 .cf-galary{
    display: relative;
 }
@@ -82,9 +86,6 @@
 	position: relative;
 	top: 40%;
 }
-.text-center{
-	margin-bottom: 50px;
-}
 .galary{
 	margin-top: 70px;
 }
@@ -93,7 +94,6 @@
 	width: 100px;
 }
 .service_detail{
-	width: 80%;
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 35px;
@@ -113,4 +113,47 @@
 }
 .Hero-text{
 	font-size: 80px;
+}
+/*----big phone to 360 small phone----- */
+@media(max-width: 480px){
+	.brand-nam{
+		width: auto !important;
+		padding-right: 0;
+		padding-top: 20px;
+	}
+	#header1 {
+		background-position: center;
+	}
+	#header{
+	background-position: 80% 0%;
+}
+	.Hero-text-h{
+		margin-left: 10px !important;
+		margin-top: 80px !important;
+	}
+	.Hero-text{
+		font-size: 50px;
+	}
+	.header-logo{
+		margin-left: 0px;
+	}
+	.cf-showcase{
+	display: block;
+}
+.cf-showcase .list{
+	width: 90%;
+}
+.card-1{
+	padding: 0 !important;
+}
+.form-control{
+	padding: 0 !important;
+}
+.about-img{
+	margin-bottom: 40px;
+}
+.card-middle{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
 }
